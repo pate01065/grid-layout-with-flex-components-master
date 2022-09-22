@@ -3,7 +3,6 @@ body {
   color: #222;
 }
 
-/* applying grid on emoji cards */
 .emojis {
   display: grid;
   grid-template-columns:1fr 1fr;
@@ -23,13 +22,12 @@ body {
   flex-wrap: wrap;
 }
 
-/* styling icons  */
 .emoji :nth-child(2) {
   order:-1;
   align-self: center;
   padding-bottom: 1rem;
 }
-/* styling bottom banner */
+
 .emoji :nth-child(4) {
    align-self:stretch;
    margin-top: auto;
