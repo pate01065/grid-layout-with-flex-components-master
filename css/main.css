@@ -3,18 +3,42 @@ body {
   color: #222;
 }
 
+/* applying grid on emoji cards */
+.emojis {
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: 1fr 1fr; 
+  column-gap: 15px;
+  row-gap: 15px;  
+}
+
+
 .emoji {
   border: 1px solid #222;
   border-radius: 8px;
-  padding: 10px;
-  align-items: flex-end;
-  
-  
+  padding: 1rem;
+   /* styling  card contents */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* styling icons  */
+.emoji :nth-child(2) {
+  order:-1;
+  align-self: center;
+  padding-bottom: 1rem;
+}
+/* styling bottom banner */
+.emoji :nth-child(4) {
+   align-self:stretch;
+   margin-top: auto;
 }
 
 .emoji h2 {
   margin: 0;
   border-bottom: 2px solid #ccc;
+  font-weight: bolder;
 }
 
 .emoji a {
@@ -23,31 +47,8 @@ body {
   color: white;
   padding: 1rem;
   border-radius: 8px;
-  margin:auto;
- 
-  
-
 }
 
 .icon {
-    font-size: 4rem;
-    
-  
-  
-}
-
-.emojis {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
-    row-gap:10px; 
-    
-
-
-}
-
-.emoji {
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: center;
+  font-size: 4rem;
 }
